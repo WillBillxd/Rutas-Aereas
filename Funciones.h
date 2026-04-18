@@ -27,6 +27,7 @@ void mostrarMatriz(int matriz[][100], int n, string ciudades[]) {
         }
         cout << endl;
     }
+    //perra de mrd
 }
 
 void cargarRutas(int matriz[][100]) {
