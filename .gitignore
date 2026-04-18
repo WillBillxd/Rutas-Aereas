@@ -1,41 +1,70 @@
-# Prerequisites
-*.d
+#include "pch.h"
+#include "Funciones.h"
+using namespace std;
+using namespace System;
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
 
-# Precompiled Headers
-*.gch
-*.pch
 
-# Linker files
-*.ilk
+int main()
+{
+  
+    string ciudades[100] = { "Lima", "Piura", "Chiclayo", "Trujillo","Iquitos", "Cusco","Puerto Maldonado","Jualiaca","Arequipa"};
+    int n = 4;
 
-# Debugger Files
-*.pdb
+    int matriz[100][100];
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
 
-# Fortran module files
-*.mod
-*.smod
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
 
-# Executables
-*.exe
-*.out
-*.app
 
-# debug information files
-*.dwo
+
+
+
+
+  int opcion;
+    do {
+        cout << "\n===== MENU PRINCIPAL =====\n";
+        cout << "1. Mostrar matriz de conectividad\n";
+        cout << "2. Agregar nueva ruta\n";
+        cout << "3. Verificar vuelo directo\n";
+        cout << "4. Salir\n";
+        cout << "Seleccione una opcion: ";
+        cin >> opcion;
+
+        switch (opcion) {
+
+        case 1:
+            cout << "Mostrando matriz...\n";
+     
+            break;
+
+        case 2:
+            cout << "Agregar nueva ruta...\n";
+           
+           
+            break;
+
+        case 3:
+            cout << "Verificando vuelo directo...\n";
+           
+            break;
+
+        case 4:
+            cout << "Saliendo del programa...\n";
+            break;
+       
+        default:
+            cout << "Opcion invalida\n";
+        }
+
+    } while (opcion != 5);
+
+
+
+
+
+
+
+
+    return 0;
+}
