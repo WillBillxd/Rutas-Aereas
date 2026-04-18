@@ -1,6 +1,5 @@
 #pragma once
 #include <iostream>
-#include <iomanip>
 using namespace std;
 void inicializarMatriz(int matriz[][100], int n) {
     for (int i = 0; i < n; i++) {
